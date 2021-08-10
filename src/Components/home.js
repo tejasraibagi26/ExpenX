@@ -12,7 +12,7 @@ const HomeComponent = ({ LandingImg }) => {
         </div>
         <div className="right">
           <div className="image">
-            <img src={LandingImg} alt="Image" />
+            <img src={LandingImg} alt="landing" />
           </div>
         </div>
       </div>

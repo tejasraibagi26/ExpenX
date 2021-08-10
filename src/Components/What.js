@@ -4,7 +4,7 @@ const What = ({ finance, money, grow }) => {
       <div className="container">
         <div className="left">
           <div className="lImg">
-            <img src={finance} alt="finance" />
+            <img src={finance} alt="finance" className="fin" />
             <p align="center" className="left-info">
               Manage Finance Hasselfree.
             </p>

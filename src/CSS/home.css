@@ -156,6 +156,7 @@ a {
 
 img {
   width: 500px;
+  background-color: transparent !important;
 }
 
 /* What */
@@ -222,6 +223,7 @@ img {
   justify-content: center;
   align-items: center;
   font-weight: bold;
+  background-color: transparent;
   /* margin-bottom: 20px; */
 }
 
@@ -232,7 +234,7 @@ img {
 /* Create Acc */
 #create-acc {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -317,9 +319,13 @@ img {
   #home .container {
     grid-template-columns: 3rem 1fr 1fr 3rem !important;
   }
+  #what .container {
+    grid-template-columns: 3rem 1fr 1fr 3rem !important;
+    padding-bottom: 20px;
+  }
   #create-acc .container {
     grid-template-columns: 3rem 1fr 1fr 3rem !important;
-    margin-top: 30%;
+    margin-top: auto;
   }
 
   #create-acc .container .left .title {
@@ -367,5 +373,9 @@ img {
 
   #what .text {
     font-size: 3rem;
+  }
+
+  #create-acc img {
+    margin-top: 100% !important;
   }
 }
