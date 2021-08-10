@@ -43,6 +43,7 @@ a {
   height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: whitesmoke;
 }
@@ -95,6 +96,7 @@ a {
   .nav-menu.active {
     left: 0;
     -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
 
@@ -137,7 +139,7 @@ a {
   }
 
   img {
-    margin-top: 100px !important;
+    margin-top: 10¸0px !important;
     width: 400px !important;
   }
 }
