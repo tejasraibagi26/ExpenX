@@ -24,6 +24,18 @@ const Navbar = ({ navOpen, setNavOpen }) => {
               Contact
             </a>
           </li>
+          <li className="nav-item">
+            <a href="#" className="nav-link">
+              Sign In
+            </a>
+          </li>
+          <li className="nav-item">
+            <a href="#">
+              <div className="btn">
+                <div className="btn-title">Sign Up</div>
+              </div>
+            </a>
+          </li>
         </ul>
         <div
           className={navOpen ? "hamburger active" : "hamburger"}

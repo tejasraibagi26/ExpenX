@@ -21,10 +21,6 @@ li {
 a {
   text-decoration: none;
 }
-/* 
-.header {
-  border-bottom: 1px solid #e2e8f0;
-} */
 
 #home {
   background-color: #121212;
@@ -36,6 +32,9 @@ a {
   align-items: center;
   padding: 1.5rem 5.5rem;
   background-color: #121212;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 .hamburger {
@@ -138,8 +137,20 @@ a {
   transition: ease-in 0.3s;
 }
 
+.btn {
+  width: 100px;
+  height: 35px;
+  border: solid 1px #fcba03;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  color: #fcba03;
+  transition: ease-in 0.3s;
+}
+
 .btn .btn-title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   background-color: transparent;
 }
