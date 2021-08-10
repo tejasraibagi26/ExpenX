@@ -324,7 +324,7 @@ img {
     grid-template-columns: 3rem 1fr 1fr 3rem !important;
   }
   #what .container {
-    grid-template-columns: 3rem 1fr 1fr 3rem !important;
+    /* grid-template-columns: 3rem 1fr 1fr 3rem !important; */
     padding-bottom: 20px;
   }
   #create-acc .container {
