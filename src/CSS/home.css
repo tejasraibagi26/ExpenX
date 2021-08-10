@@ -100,7 +100,7 @@ a {
   padding: 0;
 }
 
-.left {
+#home .container .left {
   margin-top: 100px;
   grid-column: 2/3;
 }
