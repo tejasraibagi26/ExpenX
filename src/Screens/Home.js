@@ -9,6 +9,8 @@ import HomeComponent from "../Components/home";
 import What from "../Components/What";
 import CreateAcc from "../Components/create";
 import SignUp from "../Images/signup.gif";
+import Footer from "../Components/footer";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);

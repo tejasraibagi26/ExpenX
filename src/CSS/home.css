@@ -101,6 +101,7 @@ a {
 }
 
 .left {
+  margin-top: 100px;
   grid-column: 2/3;
 }
 
@@ -154,6 +155,7 @@ a {
   font-weight: bold;
   background-color: transparent;
 }
+
 .btn:hover {
   background-color: #fcba03;
   color: #121212;
@@ -174,7 +176,6 @@ img {
 }
 
 /* What */
-
 #what {
   overflow-x: hidden;
   width: 100%;
@@ -245,6 +246,8 @@ img {
 #what img {
   width: 300px;
 }
+
+/* What End */
 
 /* Create Acc */
 #create-acc {
