@@ -240,6 +240,14 @@ img {
 
 /* Media Query */
 @media only screen and (max-width: 768px) {
+  #home {
+    display: block !important;
+  }
+
+  #home .container {
+    padding-top: 3rem;
+  }
+
   .navbar {
     padding: 1rem 1.5rem;
   }
