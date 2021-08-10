@@ -72,21 +72,25 @@ export default function Home() {
           <div className="left">
             <div className="lImg">
               <img src={finance} alt="finance" />
-              <div className="left-info">Manage Finance Hasselfree.</div>
+              <p align="center" className="left-info">
+                Manage Finance Hasselfree.
+              </p>
             </div>
           </div>
           <div className="middle">
             <div className="mImg">
               <img src={money} alt="money" />
-              <div className="left-info">
+              <p align="center" className="left-info">
                 Track Expenses on your fingertips.
-              </div>
+              </p>
             </div>
           </div>
           <div className="right">
             <div className="rImg">
               <img src={grow} alt="grow" />
-              <div className="left-info">Grow you account with ExpenX.</div>
+              <p align="center" className="left-info">
+                Grow you account with ExpenX.
+              </p>
             </div>
           </div>
         </div>
