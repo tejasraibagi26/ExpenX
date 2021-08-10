@@ -105,6 +105,12 @@ a {
   grid-column: 2/3;
 }
 
+.right {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
 .white {
   color: whitesmoke;
   font-size: 2rem;
