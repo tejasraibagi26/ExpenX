@@ -2,7 +2,7 @@ const Navbar = ({ navOpen, setNavOpen }) => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a href="#" className="nav-logo">
+        <a href="/" className="nav-logo">
           ExpenX.
         </a>
         <ul
@@ -10,7 +10,7 @@ const Navbar = ({ navOpen, setNavOpen }) => {
           id="nav-mobile-menu"
         >
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="/" className="nav-link">
               Home
             </a>
           </li>
@@ -30,7 +30,7 @@ const Navbar = ({ navOpen, setNavOpen }) => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#">
+            <a href="/signup">
               <div className="btn">
                 <div className="btn-title">Sign Up</div>
               </div>

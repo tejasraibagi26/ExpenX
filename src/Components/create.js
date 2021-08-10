@@ -8,9 +8,11 @@ const CreateAcc = ({ SignUp }) => {
             Our systems are carefully crafted to give the best user experince
             and save money. Use the button below to create an account!
           </p>
-          <div className="btn">
-            <p className="btn-title">Sign Up</p>
-          </div>
+          <a href="/signup">
+            <div className="btn">
+              <p className="btn-title">Sign Up</p>
+            </div>
+          </a>
         </div>
         <div className="right">
           <div className="image">

@@ -102,6 +102,9 @@ a {
 
 #home .container .left {
   margin-top: 100px;
+}
+
+.left {
   grid-column: 2/3;
 }
 
