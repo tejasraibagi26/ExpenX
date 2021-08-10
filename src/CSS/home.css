@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
-  background-color: #121212;
 }
 
 html {
@@ -24,6 +23,10 @@ a {
 .header {
   border-bottom: 1px solid #e2e8f0;
 } */
+
+#home {
+  background-color: #121212;
+}
 
 .navbar {
   display: flex;
@@ -78,72 +81,6 @@ a {
   color: #fcba03;
 }
 
-@media only screen and (max-width: 768px) {
-  .navbar {
-    padding: 1rem 1.5rem;
-  }
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 4.5rem;
-    flex-direction: column;
-    background-color: #121212;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-  }
-
-  .nav-menu.active {
-    left: 0;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-    z-index: 2;
-  }
-
-  .nav-link {
-    color: white;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-
-  #home .container {
-    grid-template-columns: 3rem 1fr 1fr 3rem !important;
-  }
-
-  .left {
-    grid-column: 2/5 !important;
-  }
-
-  .left .title {
-    font-size: 7rem !important;
-  }
-
-  img {
-    margin-top: 50px !important;
-    width: 400px !important;
-  }
-}
-
 /* Home */
 
 /* #home .container {
@@ -158,7 +95,7 @@ a {
 
 #home {
   width: 100%;
-  height: calc(100vh - 100px);
+  height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -229,4 +166,167 @@ a {
 
 img {
   width: 500px;
+}
+
+/* What */
+
+#what {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: #121212;
+}
+
+#what h1 {
+  background-color: transparent;
+  font-size: 3rem;
+}
+
+#what .what-is {
+  margin-bottom: 100px;
+}
+
+#what .text {
+  font-size: 6rem;
+}
+
+#what .container {
+  width: 100%;
+  background-color: white;
+  display: grid;
+  grid-template-columns: 10rem 1fr 1fr 1fr 10rem;
+  position: relative;
+}
+
+#what .container .left {
+  background-color: transparent;
+  grid-column: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what .container .middle {
+  background-color: transparent;
+  grid-column: 3/4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what .container .right {
+  background-color: transparent;
+  grid-column: 4/5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#what .left-info {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+#what img {
+  width: 300px;
+}
+
+/* Media Query */
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1.5rem;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4.5rem;
+    flex-direction: column;
+    background-color: #121212;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+  }
+
+  .nav-menu.active {
+    left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+    z-index: 2;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  #home .container {
+    grid-template-columns: 3rem 1fr 1fr 3rem !important;
+  }
+
+  .left {
+    grid-column: 2/5 !important;
+  }
+
+  .left .title {
+    font-size: 7rem !important;
+  }
+
+  img {
+    margin-top: 50px !important;
+    width: 400px !important;
+  }
+
+  #what .container .left {
+    grid-column: 2/5;
+  }
+  #what .container .middle {
+    grid-column: 2/5;
+  }
+  #what .container .right {
+    grid-column: 2/5;
+  }
+
+  #what img {
+    width: 300px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  #what .what-is {
+    margin-bottom: 0;
+    margin-top: 50px;
+  }
+
+  #what .text {
+    font-size: 3rem;
+  }
 }

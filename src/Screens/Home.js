@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "../CSS/home.css";
 import LandingImg from "../Images/img.svg";
+import finance from "../Images/finance.gif";
+import money from "../Images/money.gif";
+import grow from "../Images/grow.gif";
 
 export default function Home() {
   const [navOpen, setNavOpen] = useState(false);
@@ -57,6 +60,33 @@ export default function Home() {
           <div className="right">
             <div className="image">
               <img src={LandingImg} alt="Image" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="what">
+        {/* <div className="what-is">
+          <h1 className="text">What We Offer</h1>
+        </div> */}
+        <div className="container">
+          <div className="left">
+            <div className="lImg">
+              <img src={finance} alt="finance" />
+              <div className="left-info">Manage Finance Hasselfree.</div>
+            </div>
+          </div>
+          <div className="middle">
+            <div className="mImg">
+              <img src={money} alt="money" />
+              <div className="left-info">
+                Track Expenses on your fingertips.
+              </div>
+            </div>
+          </div>
+          <div className="right">
+            <div className="rImg">
+              <img src={grow} alt="grow" />
+              <div className="left-info">Grow you account with ExpenX.</div>
             </div>
           </div>
         </div>
