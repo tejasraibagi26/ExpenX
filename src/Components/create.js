@@ -5,8 +5,8 @@ const CreateAcc = ({ SignUp }) => {
         <div className="left">
           <h1 className="title">Create an account with us today!</h1>
           <p className="info">
-            Our systems is carefully crafted to give the best user experince and
-            save money. Use the button below to create an account!
+            Our systems are carefully crafted to give the best user experince
+            and save money. Use the button below to create an account!
           </p>
           <div className="btn">
             <p className="btn-title">Sign Up</p>
