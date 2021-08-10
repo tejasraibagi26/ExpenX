@@ -4,9 +4,9 @@ const Navbar = ({ navOpen, setNavOpen }) => {
   return (
     <header className="header">
       <nav className="navbar">
-        <a href="/" className="nav-logo">
+        <Link to="/" className="nav-logo">
           ExpenX.
-        </a>
+        </Link>
         <ul
           className={navOpen ? "nav-menu active" : "nav-menu"}
           id="nav-mobile-menu"
