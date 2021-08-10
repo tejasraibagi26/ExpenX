@@ -127,7 +127,7 @@ a {
   }
 
   #home .container {
-    grid-template-columns: 3rem 0fr 0fr 3rem !important;
+    grid-template-columns: 3rem 1fr 1fr 3rem !important;
   }
 
   .left {
@@ -139,7 +139,7 @@ a {
   }
 
   img {
-    margin-top: 10¸0px !important;
+    margin-top: 50px !important;
     width: 400px !important;
   }
 }
