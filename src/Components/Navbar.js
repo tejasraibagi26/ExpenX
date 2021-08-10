@@ -1,4 +1,4 @@
-import { NavLink as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ navOpen, setNavOpen }) => {
   return (
@@ -17,7 +17,7 @@ const Navbar = ({ navOpen, setNavOpen }) => {
             </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <a href="/about" className="nav-link">
               About
             </a>
           </li>

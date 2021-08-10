@@ -1,4 +1,4 @@
-import { NavLink as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const CreateAcc = ({ SignUp }) => {
   return (
@@ -7,7 +7,7 @@ const CreateAcc = ({ SignUp }) => {
         <div className="left">
           <h1 className="title">Create an account with us today!</h1>
           <p className="info">
-            Our systems are carefully crafted to give the best user experince
+            Our systems are carefully crafted to give the best user experience
             and save money. Use the button below to create an account!
           </p>
           <Link to="/signup">
