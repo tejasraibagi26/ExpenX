@@ -331,6 +331,7 @@ img {
 
   #create-acc .container .left .title {
     font-size: 4rem !important;
+    padding-right: 20px;
   }
 
   #create-acc .right img {
