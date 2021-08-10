@@ -3,7 +3,7 @@ const CreateAcc = ({ SignUp }) => {
     <section id="create-acc">
       <div className="container">
         <div className="left">
-          <h1 className="title">Create an accout with us today!</h1>
+          <h1 className="title">Create an account with us today!</h1>
           <p className="info">
             Our systems is carefully crafted to give the best user experince and
             save money. Use the button below to create an account!
