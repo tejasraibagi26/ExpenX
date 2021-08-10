@@ -1,3 +1,5 @@
+import { NavLink as Link } from "react-router-dom";
+
 const Navbar = ({ navOpen, setNavOpen }) => {
   return (
     <header className="header">
@@ -10,9 +12,9 @@ const Navbar = ({ navOpen, setNavOpen }) => {
           id="nav-mobile-menu"
         >
           <li className="nav-item">
-            <a href="/" className="nav-link">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
             <a href="#" className="nav-link">
@@ -20,21 +22,21 @@ const Navbar = ({ navOpen, setNavOpen }) => {
             </a>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link to="#" className="nav-link">
               Contact
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="#" className="nav-link">
+            <Link to="#" className="nav-link">
               Sign In
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a href="/signup">
+            <Link to="/signup">
               <div className="btn">
                 <div className="btn-title">Sign Up</div>
               </div>
-            </a>
+            </Link>
           </li>
         </ul>
         <div
