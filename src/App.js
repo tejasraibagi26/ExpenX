@@ -2,7 +2,7 @@ import Main from "./Pages/main";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ overflowX: "hidden" }}>
       <Main />
     </div>
   );
