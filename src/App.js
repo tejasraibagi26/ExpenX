@@ -1,6 +1,8 @@
 import Main from "./Pages/main";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import SignUp from "./Pages/SignUp";
+import SignIn from "./Pages/SignIn";
+import User from "./Pages/User";
 
 function App() {
   return (
@@ -8,6 +10,8 @@ function App() {
       <Switch>
         <Route path="/" exact component={Main} />
         <Route path="/signup" exact component={SignUp} />
+        <Route path="/signin" exact component={SignIn} />
+        <Route path="/user/1" exact component={User} />
       </Switch>
     </Router>
   );
