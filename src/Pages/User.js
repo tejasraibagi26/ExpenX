@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import "../CSS/user.css";
+import { FaArrowRight } from "react-icons/fa";
 
 export default function User() {
   const [navOpen, setNavOpen] = useState(false);
@@ -22,10 +23,16 @@ export default function User() {
         <h1 className="greeting">{greeting}, Tejas Raibagi.</h1>
         <div className="container">
           <div className="left-container">
-            <div className="cont-title">Transcations</div>
+            <div className="row">
+              <div className="cont-title">Transcations</div>
+              <FaArrowRight className="icon" />
+            </div>
           </div>
           <div className="right-container">
-            <div className="cont-title">Categories</div>
+            <div className="row">
+              <div className="cont-title">Categories</div>
+              <FaArrowRight className="icon" />
+            </div>
           </div>
         </div>
       </section>
