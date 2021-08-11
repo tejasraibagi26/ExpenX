@@ -11,21 +11,33 @@ const Navbar = ({ navOpen, setNavOpen, isUserLoggedIn }) => {
           className={navOpen ? "nav-menu active" : "nav-menu"}
           id="nav-mobile-menu"
         >
-          <li className="nav-item">
-            <Link to="/" className="nav-link">
-              Home
-            </Link>
-          </li>
-          <li className="nav-item">
-            <a href="/about" className="nav-link">
-              About
-            </a>
-          </li>
-          <li className="nav-item">
-            <Link to="#" className="nav-link">
-              Contact
-            </Link>
-          </li>
+          {isUserLoggedIn ? (
+            <></>
+          ) : (
+            <li className="nav-item">
+              <Link to="/" className="nav-link">
+                Home
+              </Link>
+            </li>
+          )}
+          {isUserLoggedIn ? (
+            <></>
+          ) : (
+            <li className="nav-item">
+              <a href="/about" className="nav-link">
+                About
+              </a>
+            </li>
+          )}
+          {isUserLoggedIn ? (
+            <></>
+          ) : (
+            <li className="nav-item">
+              <Link to="#" className="nav-link">
+                Contact
+              </Link>
+            </li>
+          )}
           {isUserLoggedIn ? (
             <></>
           ) : (
