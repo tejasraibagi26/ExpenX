@@ -58,6 +58,17 @@ export default function User() {
               <div className="cont-title">Categories</div>
               <FaArrowRight className="icon" />
             </div>
+            <div className="transction">
+              {transaction.map((t) => (
+                <div className="tran" key={t["id"]}>
+                  <div className="title">
+                    {t["trans-name"]}
+                    <div className="type">{t["type"]}</div>
+                  </div>
+                  <div className="amount">{t["amount"]}</div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <div className="add">
