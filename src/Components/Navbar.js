@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-const Navbar = ({ navOpen, setNavOpen, isUserLoggedIn }) => {
+const Navbar = ({ navOpen, setNavOpen, isUserLoggedIn, username }) => {
   return (
     <header className="header">
       <nav className="navbar">
@@ -54,7 +54,7 @@ const Navbar = ({ navOpen, setNavOpen, isUserLoggedIn }) => {
                 className="nav-link"
                 style={{ color: "#fabc03", fontWeight: "bold" }}
               >
-                Tejas Raibagi
+                {username}
               </Link>
             </li>
           ) : (
@@ -63,6 +63,15 @@ const Navbar = ({ navOpen, setNavOpen, isUserLoggedIn }) => {
                 <div className="btn">
                   <div className="btn-title">Sign Up</div>
                 </div>
+              </Link>
+            </li>
+          )}
+          {!isUserLoggedIn ? (
+            <></>
+          ) : (
+            <li className="nav-item">
+              <Link to="/" className="nav-link logout">
+                Logout
               </Link>
             </li>
           )}

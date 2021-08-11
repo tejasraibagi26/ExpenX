@@ -1,0 +1,71 @@
+{
+        "userid":"0",
+        "transactions": [
+            {
+                "id":"0",
+                "trans-name": "Dominos",
+                "amount": "$100",
+                "type": "Food"
+            },
+            {
+                "id":"1",
+                "trans-name": "Diamond Neckless",
+                "amount": "$100,000",
+                "type": "Jewelery"
+            },
+            {
+                "id":"2",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"3",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"4",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"5",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"6",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"7",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"8",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"9",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            },
+            {
+                "id":"10",
+                "trans-name": "Comedy Show",
+                "amount": "$61",
+                "type": "Entertainment"
+            }
+        ]
+}

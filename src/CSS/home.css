@@ -166,6 +166,16 @@ a {
   background-color: transparent;
 }
 
+.logout {
+  color: rgb(255, 115, 115) !important;
+  transition: all 0.2s;
+}
+
+.logout:hover {
+  text-decoration: none !important;
+  transform: scale(1.2);
+}
+
 .btn:hover {
   background-color: #fcba03;
   color: #121212;

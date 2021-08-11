@@ -3,6 +3,9 @@ import Navbar from "../Components/Navbar";
 import "../CSS/signup.css";
 import { useHistory } from "react-router-dom";
 
+let users = require("../Data/users.json");
+console.log(users.users.length);
+
 export default function SignIn() {
   let history = useHistory();
   const [uname, setUname] = useState("");
@@ -12,6 +15,7 @@ export default function SignIn() {
   const [navOpen, setNavOpen] = useState(false);
 
   var onValueChanged = (e) => {
+    console.log(users[1]);
     setErr("");
     switch (e.target.name) {
       case "uname":
@@ -29,13 +33,22 @@ export default function SignIn() {
     if (uname === "" || pass === "")
       return setErr("Error validating. Please try again.");
 
-    sendDetails();
+    for (var i = 0; i <= users.users.length - 1; i++) {
+      console.log(i);
+      if (uname === users.users[i]["user"]) {
+        if (pass === users.users[i]["pass"]) {
+          console.log("Verified");
+          localStorage.setItem("user", uname);
+          sendDetails(i);
+        }
+      }
+    }
   };
 
-  var sendDetails = () => {
+  var sendDetails = (i) => {
     //Send Deeds
     setStatus(true);
-    history.push("/user/1");
+    history.push(`/user/${i}`);
   };
 
   return (
