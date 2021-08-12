@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../Components/Navbar";
 import "../CSS/user.css";
 import { FaArrowRight, FaPlus } from "react-icons/fa";
-import { HiPencilAlt, HiTag } from "react-icons/hi";
+import { HiPencilAlt, HiTag, HiCash } from "react-icons/hi";
 
 var transactions = require("../Data/transaction.json");
 var transaction = transactions["transactions"];
@@ -90,7 +90,7 @@ export default function User() {
                   </div>
                   <div className="inp">
                     <label className="lable">
-                      <HiPencilAlt /> Amount
+                      <HiCash /> Amount
                       <input
                         placeholder="Amount of Expense"
                         // onChange={onValueChanged}
