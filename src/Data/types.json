@@ -1,0 +1,26 @@
+[
+    {
+        "id": "0",
+        "value": "Beauty Care"
+    },
+    {
+        "id": "1",
+        "value":"Education"
+    },
+    {
+        "id": "2",
+        "value":"Entertainment"
+    },
+    {
+        "id": "3",
+        "value":"Personal"
+    },
+    {
+        "id": "4",
+        "value":"Rent"
+    },
+    {
+        "id": "5",
+        "value":"Travel"
+    }
+]
