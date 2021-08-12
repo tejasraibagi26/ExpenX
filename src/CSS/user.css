@@ -219,7 +219,7 @@ input[type="number"] {
   }
 
   .add-expense .modal-container {
-    width: auto;
+    width: 70vw;
   }
 
   .btn {
